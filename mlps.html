@@ -298,234 +298,117 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 </TBODY>
               </TABLE></TD>
             <TD vAlign=top background=img/bg01.jpg> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
-                <FORM name=myform onSubmit="return CheckForm()" action=save.asp?action=savewrite method=post>
+              <div align="center" > 
+			<div id="teee"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid red;"></div> 
+			<div id="hidden">
+			          <br><br> <br><br><br><br>
+		
+			    <center><button onclick="displayText()" width="30%">忏悔</button></center><br><br>
+				  <center> <button onclick="displayText2()">礼佛</button></center><br><br>
+				  <center>  <button onclick="displayText3()">供养</button></center><br><br>
+				   <center>  <button onclick="displayText4()">破咒</button></center><br><br>
+				   <center>   <button onclick="displayText5()">驱病</button></center><br><br>
+				   </div>
+				  
+  <div id="text"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid red;font-size:20px;font-family:'微软雅黑';color:yellow;"></div> 
+  <div id="hidden2">
+  <br><br>
+				   <center>   <button onclick="fanhui()">返回</button></center>
+		</div>
+ <script>
+        function displayText() {
+      var text = "如是等一切世界，诸佛世尊，常住在世。 是诸世尊，当慈念我。若我此生，若我前生，从无始生死以来，所作众罪。若自作，若教他作，见作随喜。若塔若僧，若四方僧物。 若自取，若教他取，见取随喜。五无间罪，若自作，若教他作，见作随喜。十不善道，若自作，若教他作，见作随喜。所作罪障，或有覆藏，或不覆藏。 应堕地狱，饿鬼畜生，诸余恶趣，边地下贱，及蔑戾车，如是等处，所作罪障，今皆忏悔。南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛。";
+	  
+	
+      var textElement = document.getElementById("text");
+	 
+      textElement.innerHTML = text;
+	
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+    function displayText2() {
+     var text="南无皈依十方。尽虚空界。一切诸佛。<br>南无皈依十方。尽虚空界。一切尊法。<br>南无皈依十方。尽虚空界。一切贤圣僧。<br>我今发心不为自求人天福报。声闻缘觉。乃至权乘诸位菩萨。唯依最上乘发菩提心。愿与法界众生。一时同得阿耨多罗三藐三菩提。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	  function displayText3() {
+     var text="饭食有德，当思来之不易；<br>粒粒辛苦，切莫浪费丢弃。<br>我身我心，不忍半点伤害；<br>切莫杀生，充己一时口欲。<br>衣食资具，父母从小赐予；<br>我学我德，恩师慈悲开启。<br>未知横祸，三宝护法遣去；<br>幸福人生，亲人朋友相惜。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	  function displayText4() {
+     var text="南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	  function displayText5() {
+      var text="南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	
+	
+	
+	
+	
+           function fanhui(){
+		  
+     document.getElementById("text").innerHTML = "";
+		  document.getElementById("hidden").style.display="block"; 
+		   
+		  document.getElementById("hidden2").style.display="none"; 
+		   }    
+	
+
+document.getElementById("hidden2").style.display="none"; 
+	
+	
+	
+
+  </script>
+			
+			
+			</DIV>
+			
+                <FORM name=myform onSubmit="return CheckForm()" action= method=post>
                   <TBODY>
-                    <TR class=word> 
-                      <TD height=23> <DIV align=center><B>网 上 礼 佛 祈 愿 
-                          <input type=hidden value=释迦牟尼佛 name=foname>
-                          <input type=hidden name=fendthing>
-                          </B></DIV>
-                        <DIV align=center> </DIV></TD>
-                    </TR>
-                    
-                    <TR class=word> 
-                      <TD height=30> <DIV align=left>家庭·伦理： 
-                          <select class=bg onChange=SelectWords1() 
-            name=wordopt1>
-                            <option value=-1 selected>请选择</option>
-                            <option 
-              value=0>为父母亲友祈愿文</option>
-                            <option value=1>为父母寿辰祈愿文</option>
-                            <option value=2>为丈夫祈愿文</option>
-                            <option value=3>为妻子祈愿文</option>
-                            <option value=4>为孕妇祈愿文</option>
-                            <option value=5>为新生儿祈愿文</option>
-                            <option value=6>规劝青少年祈愿文</option>
-                            <option value=7>成年礼祈愿文</option>
-                            <option value=8>为服兵役者祈愿文</option>
-                            <option value=9>为少女祈愿文</option>
-                            <option value=10>为老人祈愿文</option>
-                            <option value=11>探病祈愿文</option>
-                            <option value=12>为亡者和遗族祈愿文</option>
-                            <option 
-              value=13>为房屋开工祈愿文</option>
-                            <option value=14>为新居落成祈愿文</option>
-                            <option value=15>为受虐儿童祈愿文</option>
-                            <option 
-              value=16>为受难妇女祈愿文</option>
-                            <option value=17>为残障者祈愿文</option>
-                            <option value=18>为鳏寡孤独者祈愿文</option>
-                            <option 
-              value=19>为绝症患者祈愿文</option>
-                            <option value=20>为考生祈愿文</option>
-                            <option value=21>为受刑人祈愿文</option>
-                            <option value=22>为死囚祈愿文</option>
-                            <option value=23>为历代宗亲祈愿文</option>
-                          </select>
-                        </DIV></TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=30>勉励·期许： 
-                        <SELECT class=bg onchange=SelectWords2() 
-            name=wordopt2>
-                          <OPTION value=-1 selected>请选择</OPTION>
-                          <OPTION 
-              value=0>晨起祈愿文</OPTION>
-                          <OPTION value=1>睡前祈愿文</OPTION>
-                          <OPTION 
-              value=2>生日祈愿文</OPTION>
-                          <OPTION value=3>除夕祈愿文</OPTION>
-                          <OPTION 
-              value=4>新春祈愿文</OPTION>
-                          <OPTION value=5>求财富祈愿文</OPTION>
-                          <OPTION 
-              value=6>旅行出游祈愿文</OPTION>
-                          <OPTION value=7>广结善缘祈愿文</OPTION>
-                          <OPTION 
-              value=8>惭愧祈愿文</OPTION>
-                          <OPTION value=9>忏悔祈愿文</OPTION>
-                          <OPTION 
-              value=10>就业工作祈愿文</OPTION>
-                          <OPTION value=11>为自我信心祈愿文</OPTION>
-                          <OPTION value=12>为放下情执祈愿文</OPTION>
-                          <OPTION 
-              value=13>为心慌意乱祈愿文</OPTION>
-                          <OPTION value=14>为不务正业者祈愿文</OPTION>
-                          <OPTION value=15>为好战好斗者祈愿文</OPTION>
-                          <OPTION 
-              value=16>为社会失业者祈愿文</OPTION>
-                          <OPTION value=17>为流浪者祈愿文</OPTION>
-                          <OPTION value=18>为无家无国者祈愿文</OPTION>
-                          <OPTION 
-              value=19>为暴力倾向者祈愿文</OPTION>
-                          <OPTION value=20>为贫苦大众祈愿文</OPTION>
-                          <OPTION value=21>为误入歧途者祈愿文</OPTION>
-                          <OPTION 
-              value=22>消灾免难祈愿文</OPTION>
-                          <OPTION value=23>临终祈愿文</OPTION>
-                        </SELECT> </TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=30>社会·职业： 
-                        <SELECT class=bg onchange=SelectWords3() 
-            name=wordopt3>
-                          <OPTION value=-1 selected>请选择</OPTION>
-                          <OPTION 
-              value=0>为三军将士祈愿文</OPTION>
-                          <OPTION value=1>为探险者祈愿文</OPTION>
-                          <OPTION 
-              value=2>为清道夫祈愿文</OPTION>
-                          <OPTION value=3>为晨农渔工祈愿文</OPTION>
-                          <OPTION 
-              value=4>为医护人员祈愿文</OPTION>
-                          <OPTION value=5>为警察祈愿文</OPTION>
-                          <OPTION 
-              value=6>为义工祈愿文</OPTION>
-                          <OPTION value=7>为工程人员祈愿文</OPTION>
-                          <OPTION 
-              value=8>为救难人员祈愿文</OPTION>
-                          <OPTION value=9>为消防人员祈愿文</OPTION>
-                          <OPTION value=10>为演艺人员祈愿文</OPTION>
-                          <OPTION 
-              value=11>为交通人员祈愿文</OPTION>
-                          <OPTION value=12>为海域工作者祈愿文</OPTION>
-                          <OPTION value=13>为烟花女子祈愿文</OPTION>
-                          <OPTION 
-              value=14>为汽车驾驶祈愿文</OPTION>
-                          <OPTION value=15>为教师祈愿文</OPTION>
-                          <OPTION value=16>为大众传播者祈愿文</OPTION>
-                          <OPTION 
-              value=17>为邮电人员祈愿文</OPTION>
-                          <OPTION value=18>为资源回收者祈愿文</OPTION>
-                          <OPTION value=19>为阵亡将士祈愿文</OPTION>
-                          <OPTION 
-              value=20>为国家祈福祈愿文</OPTION>
-                          <OPTION value=21>为世界和平祈愿文</OPTION>
-                          <OPTION value=22>为自然生态祈愿文</OPTION>
-                          <OPTION 
-              value=23>为社会大众祈愿文</OPTION>
-                          <OPTION 
-            value=24>为九二一地震祈愿文</OPTION>
-                        </SELECT> </TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=30>佛教·法会： 
-                        <SELECT class=bg onchange=SelectWords4() 
-            name=wordopt4>
-                          <OPTION value=-1 selected>请选择</OPTION>
-                          <OPTION 
-              value=0>佛诞节祈愿文</OPTION>
-                          <OPTION value=1>佛像开光祈愿文</OPTION>
-                          <OPTION 
-              value=2>皈依三宝祈愿文</OPTION>
-                          <OPTION value=3>受持五戒祈愿文</OPTION>
-                          <OPTION 
-              value=4>献灯祈愿文</OPTION>
-                          <OPTION value=5>为出家修道者祈愿文</OPTION>
-                          <OPTION 
-              value=6>为在家信众祈愿文</OPTION>
-                          <OPTION value=7>佛化婚礼祈愿文</OPTION>
-                          <OPTION 
-              value=8>为弘法善知识祈愿文</OPTION>
-                          <OPTION value=9>家庭普照祈愿文</OPTION>
-                          <OPTION value=10>为听经闻法者祈愿文</OPTION>
-                          <OPTION 
-              value=11>出家众为父母祈愿文</OPTION>
-                          <OPTION value=12>为出家儿女祈愿文</OPTION>
-                          <OPTION value=13>共修法会祈愿文</OPTION>
-                          <OPTION 
-              value=14>向阿弥陀佛祈愿文</OPTION>
-                          <OPTION value=15>向药师如来祈愿文</OPTION>
-                          <OPTION value=16>向观世音菩萨祈愿文</OPTION>
-                          <OPTION 
-              value=17>为三时系念祈愿文</OPTION>
-                          <OPTION value=18>梁皇宝忏祈愿文</OPTION>
-                          <OPTION value=19>慈悲三昧水忏祈愿文</OPTION>
-                          <OPTION 
-              value=20>焰口祈愿文</OPTION>
-                          <OPTION value=21>朝山祈愿文</OPTION>
-                          <OPTION 
-              value=22>为神鬼灵祗祈愿文</OPTION>
-                        </SELECT> </TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=30> <DIV class=small align=center><span style="letter-spacing:1px; line-height:21px;"><font face="微软雅黑" size="2" color=#ffff00><b>*注：上面祈愿文为可选,您也可以在下面输入原创祈愿文，建议主题小于20字</b></font></span></DIV></TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=21> *祈愿主题：<input name="GuestTitle" type="text" class=bg size="28" maxlength="45"></TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=110> <div align="center"> 
-                          <textarea class=bg  name='GuestContent' id='GuestContent'  rows=13 cols=32></textarea>
-                        </div></TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=16> 性 别： 
-                        <Input class=bg11 style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px" type=radio CHECKED value=1 name=GuestSex>
-                        男 
-                        <Input class=bg11 style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px" type=radio value=0 name=GuestSex>
-                        女 </TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=25> 姓　名： 
-                        <input name="Name" type="text" class=bg id="Name" value="" >*</TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=25> 联系QQ： 
-                        <input name="qq" type="text" class=bg id="qq" value="" >*</TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=25> 来　自： 
-                        <input name="address" type="text" class=bg id="address" value="" >*</TD>
-                    </TR>
-                    <TR class=word> 
-                      <TD height=32> <DIV align=center> 
+    <TD height=110> <div align="center"> 
+                        
                           <Input type=hidden value="1" name=kindid>
-												   <Input type=hidden value="index1.htm" name=from>
-                                                    <Input type=hidden value="" name=GuestTitle2>
-                                                    <Input type=hidden value="弥勒菩萨" name=GuestTitle1>
-                                                    <Input type=hidden value="0" name=saveedit>
-                                                    <Input type=hidden value="" name=saveeditid>
-                                                    <Input type=hidden value=11 name=GuestImages>
-                                                    <Input type=hidden value="" name=ReplyId>
-                                                    <Input type=submit value=" 发 表" name=Submit1>
-                                                    <Input type=reset value=" 重 填 " name=Submit3>
-                        </DIV></TD>
+												  
+    <Input type=hidden value="" name=GuestTitle2>
+                                          </DIV></TD>
                     </TR>
                     <TR class=word> 
                       <TD class=small height=26> </TD>
                     </TR>
                   </TBODY>
                 </FORM>
-                <FORM name=preview action=GuestPreview.asp method=post target=GuestPreview>
-                  <Input type=hidden name=title>
-                  <Input type=hidden name=content>
-                </FORM>
+              
               </TABLE></TD>
           </TR>
         </TBODY>
       </TABLE></td>
-    
   </tr>
 </table>
                                  <!---结束-->
