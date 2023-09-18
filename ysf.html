@@ -299,25 +299,27 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
               </TABLE></TD>
             <TD vAlign=top background=img/bg01.jpg> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
                 <div align="center" > 
-			<div id="teee"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid red;"></div> 
-			<div id="hidden">
-			          <br><br> <br><br><br><br>
+			<div id="teee2"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:3px solid red;"></div> 
+			<div id="hidden4" style="font-size:20px;font-family:'微软雅黑';color:yellow;"><b>请在菩萨像前发愿：</b><div style="font-size:10px;font-family:'微软雅黑';color:yellow;"><b>点击下方按钮</b></div></div>
+			
+			<div id="teee2"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid red;"></div> 
+			<div id="hidden3">
+			      
 		
-			    <center><button onclick="displayText()" width="30%">忏悔</button></center><br><br>
-				  <center> <button onclick="displayText2()">礼佛</button></center><br><br>
-				  <center>  <button onclick="displayText3()">供养</button></center><br><br>
-				   <center>  <button onclick="displayText4()">破咒</button></center><br><br>
-				   <center>   <button onclick="displayText5()">驱病</button></center><br><br>
+			  <center> <button onclick="displayText6()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">礼敬诸佛</button></center>
+				<center>   <button onclick="displayText7()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">称叹如来</button></center>
+				 <center>  <button onclick="displayText8()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">广修供养</button></center>
+				<center>   <button onclick="displayText9()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">忏悔业障</button></center>
+				 <center>  <button onclick="displayText10()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">随喜功德</button></center>
+				     <center> <button onclick="displayText11()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">请转法轮</button></center>
+				<center>   <button onclick="displayText12()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">请佛住世</button></center>
+				 <center>  <button onclick="displayText13()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">常随佛学</button></center>
+				<center>   <button onclick="displayText14()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">恒顺众生</button></center>
+				 <center>  <button onclick="displayText15()" style="width:80px;height:28px;font-size:15px;font-family:'微软雅黑';color:">普皆回响</button></center><br>
 				   </div>
-				  
-  <div id="text"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid red;font-size:20px;font-family:'微软雅黑';color:yellow;"></div> 
-  <div id="hidden2">
-  <br><br>
-				   <center>   <button onclick="fanhui()">返回</button></center>
-		</div>
- <script>
-        function displayText() {
-      var text = "如是等一切世界，诸佛世尊，常住在世。 是诸世尊，当慈念我。若我此生，若我前生，从无始生死以来，所作众罪。若自作，若教他作，见作随喜。若塔若僧，若四方僧物。 若自取，若教他取，见取随喜。五无间罪，若自作，若教他作，见作随喜。十不善道，若自作，若教他作，见作随喜。所作罪障，或有覆藏，或不覆藏。 应堕地狱，饿鬼畜生，诸余恶趣，边地下贱，及蔑戾车，如是等处，所作罪障，今皆忏悔。南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛，南无阿弥陀佛。";
+<script>
+        function displayText6() {
+      var text = "<br>我以普贤行愿力故，深心信解，如对目前，悉以清净身语意业，常修礼敬。虚空界尽，我礼乃尽。以虚空界不可尽故，我此礼敬无有穷尽。如是乃至众生界尽，众生业尽，众生烦恼尽，我礼乃尽。而众生界乃至烦恼无有尽故，我此礼敬无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
 	  
 	
       var textElement = document.getElementById("text");
@@ -325,44 +327,202 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
       textElement.innerHTML = text;
 	
 	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none";
+      	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+    function displayText7() {
+     var text="我当悉以甚深胜解现前知见，称扬赞叹一切如来诸功德海。穷未来际，相续不断。尽于法界，无不周遍。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我赞乃尽。而虚空界乃至烦恼无有尽故，我此赞叹无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	  function displayText8() {
+     var text="我以普贤行愿力故，起深信解现前知见，悉以上妙诸供养具，而为供养。诸供养中，法供养最。所谓如说修行供养，利益众生供养，摄受众生供养，代众生苦供养，勤修善根供养，不舍菩萨业供养，不离菩提心供养。此广大最胜供养，虚空界尽，众生界尽，众生业尽，众生烦恼尽，我供乃尽。而虚空界乃至烦恼不可尽故，我此供养亦无有尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none";
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	  function displayText9() {
+     var text="我今悉以清净三业，遍于法界极微尘刹，一切诸佛菩萨众前，诚心忏悔，后不复造，恒住净戒一切功德。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我忏乃尽。而虚空界乃至众生烦恼不可尽故，我此忏悔无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	  function displayText10() {
+      var text="如是一切难行苦行，圆满种种波罗蜜门，证入种种菩萨智地，成就诸佛无上菩提，及般涅槃，分布舍利，所有善根，我皆随喜。及彼十方一切世界，六趣四生一切种类，所有功德，乃至一尘，我皆随喜。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我此随喜无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	
+	  function displayText11() {
+      var text="一一佛刹中，念念有不可说不可说佛刹极微尘数一切诸佛成等正觉，一切菩萨海会围绕。而我悉以身口意业种种方便，殷勤劝请转妙法轮。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我常劝请一切诸佛转正法轮，无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	  function displayText12() {
+      var text = "十方三世一切佛刹，将欲示现般涅槃者。及诸菩萨声闻缘觉有学无学，乃至一切诸善知识，我悉劝请莫入涅槃。经于一切佛刹极微尘数劫，为欲利乐一切众生。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我此劝请无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+	  
+	
+      var textElement = document.getElementById("text");
+	 
+      textElement.innerHTML = text;
+	
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+    function displayText13() {
+     var text="如此娑婆世界毗卢遮那如来，从初发心，精进不退，以不可说不可说身命而为布施。剥皮为纸，析骨为笔，刺血为墨，书写经典，积如须弥。为重法故，不惜身命，种种众会，以圆满音，如大雷震，随其乐欲，成熟众生，乃至示现入于涅槃，如是一切我皆随学。如今世尊毗卢遮那，如是尽法界虚空界，十方三世一切佛刹，所有尘中一切如来，皆亦如是，于念念中，我皆随学。如是虚空界尽，众生界尽，众生业尽，众生烦恼尽，我此随学无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	  function displayText14() {
+     var text="十方刹海所有众生，种种差别。我皆于彼随顺而转。种种承事，种种供养。如敬父母，如奉师长，及阿罗汉，乃至如来，等无有异。以于众生心平等故，则能成就圆满大悲。以大悲心随众生故，则能成就供养如来。菩萨如是随顺众生，虚空界尽，众生界尽，众生业尽，众生烦恼尽，我此随顺无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	  function displayText15() {
+     var text="从初礼拜，乃至随顺，所有功德，皆悉回向尽法界虚空界一切众生。愿令众生常得安乐，无诸病苦，欲行恶法，皆悉不成。所修善业，皆速成就。关闭一切诸恶趣门，开示人天涅槃正路。若诸众生，因其积集诸恶业故，所感一切极重苦果，我皆代受。令彼众生，悉得解脱，究竟成就无上菩提。菩萨如是所修回向，虚空界尽，众生界尽，众生业尽，众生烦恼尽，我此回向无有穷尽。念念相续，无有间断。身语意业，无有疲厌。";
+    
+	  var textElement = document.getElementById("text");
+     
+	  textElement.innerHTML = text;
+	  document.getElementById("hidden").style.display="none";
+	  document.getElementById("hidden3").style.display="none"; 
+	  document.getElementById("hidden4").style.display="none"; 
+	  document.getElementById("hidden2").style.display="block"; 
+    }
+	
+	
+	
+
+
+  </script>
+			
+			
+			
+			
+			<div id="teee"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid yellow;"></div> 
+			<div id="hidden">
+			      
+		
+			   <button onclick="displayText()">忏悔</button>
+				  <button onclick="displayText2()">礼佛</button>
+				  <button onclick="displayText3()">供养</button>
+				  <button onclick="displayText4()">破咒</button>
+				  <button onclick="displayText5()">驱病</button>
+				   </div>
+				  
+  <div id="text"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid yellow;font-size:20px;font-family:'微软雅黑';color:yellow;"></div> 
+  <div id="hidden2">
+  <br><br>
+				   <center>   <button onclick="fanhui()">返回</button></center>
+		</div>
+ <script>
+        function displayText() {
+      var text = "往昔所造诸恶业，<br>皆由无始贪嗔痴。<br>从身口意之所生，<br>今对佛前求忏悔。<br>所有罪根皆消灭。";
+	  
+	
+      var textElement = document.getElementById("text");
+	 
+      textElement.innerHTML = text;
+	
+	  document.getElementById("hidden").style.display="none";
+	   document.getElementById("hidden3").style.display="none"; 
+	   document.getElementById("hidden4").style.display="none"; 
 	  document.getElementById("hidden2").style.display="block"; 
     }
     function displayText2() {
-     var text="南无皈依十方。尽虚空界。一切诸佛。<br>南无皈依十方。尽虚空界。一切尊法。<br>南无皈依十方。尽虚空界。一切贤圣僧。<br>我今发心不为自求人天福报。声闻缘觉。乃至权乘诸位菩萨。唯依最上乘发菩提心。愿与法界众生。一时同得阿耨多罗三藐三菩提。";
+     var text="天上天下不如佛,<br>十方世界亦无比。<br>世间所有我尽见,<br>无有能比如佛者。";
     
 	  var textElement = document.getElementById("text");
      
 	  textElement.innerHTML = text;
 	  document.getElementById("hidden").style.display="none";
+	   document.getElementById("hidden3").style.display="none"; 
+	   document.getElementById("hidden4").style.display="none"; 
 	  document.getElementById("hidden2").style.display="block"; 
     }
 	  function displayText3() {
-     var text="饭食有德，当思来之不易；<br>粒粒辛苦，切莫浪费丢弃。<br>我身我心，不忍半点伤害；<br>切莫杀生，充己一时口欲。<br>衣食资具，父母从小赐予；<br>我学我德，恩师慈悲开启。<br>未知横祸，三宝护法遣去；<br>幸福人生，亲人朋友相惜。";
+     var text="愿我于漫长轮回中，能供养微尘数如来，一一如来前能以微尘数供品供养。愿我于佛出世后能以各种供品供养世尊，且于佛教法下出家，精进持戒、闻法、修持等行，并为趋入恶道、造不善业诸众宣讲佛法，使之调柔身心，接受我之劝化。";
     
 	  var textElement = document.getElementById("text");
      
 	  textElement.innerHTML = text;
 	  document.getElementById("hidden").style.display="none";
+	   document.getElementById("hidden3").style.display="none"; 
+	   document.getElementById("hidden4").style.display="none"; 
 	  document.getElementById("hidden2").style.display="block"; 
     }
 	
 	  function displayText4() {
-     var text="南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，";
+     var text="准提咒：南无飒哆喃 三藐三勃陀俱胝南 怛侄他（namosaduonan sanmiaosanputuo juzhinan dazhituo）唵折隶 主隶 准提娑婆诃（weng zheli zhuli zhunti suopohe）唵 折隶主隶 准提娑婆诃（weng zheli zhuli zhunti suopohe） 。（完）--------------持诵越多越好";
     
 	  var textElement = document.getElementById("text");
      
 	  textElement.innerHTML = text;
 	  document.getElementById("hidden").style.display="none";
+	   document.getElementById("hidden3").style.display="none"; 
+	   document.getElementById("hidden4").style.display="none"; 
 	  document.getElementById("hidden2").style.display="block"; 
     }
 	
 	  function displayText5() {
-      var text="南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无药师琉璃光佛，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，<br>南无地藏王菩萨，";
+      var text="药师咒：南摩薄伽伐帝nā mō pó qié fá dì鞞殺社，窭噜bī shā yuē，lōu la,薜琉璃，伯喇婆bī liū lī，bō lā pó,喝啰阇也gā lā shē ya怛他揭多也，阿啰喝，揭帝，ā luō hē，gá dì,三藐三菩陀耶，sān miāo sān pū tuó ye怛姪他，唵，dān zhī tuō，ōng鞞杀逝，bī shā yuē,鞞杀逝。bī shā yuē,鞞杀社，bī shā yuē,三没揭帝，莎诃。sān mō gá dì，suō ha。-------于佛像前诵持108遍，自有殊胜感应。";
     
 	  var textElement = document.getElementById("text");
      
 	  textElement.innerHTML = text;
 	  document.getElementById("hidden").style.display="none";
+	   document.getElementById("hidden3").style.display="none"; 
+	   document.getElementById("hidden4").style.display="none"; 
 	  document.getElementById("hidden2").style.display="block"; 
     }
 	
@@ -375,7 +535,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		  
      document.getElementById("text").innerHTML = "";
 		  document.getElementById("hidden").style.display="block"; 
-		   
+		    document.getElementById("hidden3").style.display="block"; 
+			document.getElementById("hidden4").style.display="block"; 
 		  document.getElementById("hidden2").style.display="none"; 
 		   }    
 	
