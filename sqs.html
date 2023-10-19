@@ -296,7 +296,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 </TBODY>
               </TABLE></TD>
             <TD vAlign=top background=img/bg01.jpg> <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
-              <div align="center" > 
+           <div align="center" > 
 			<div id="teee2"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:3px solid red;"></div> 
 			<div id="hidden4" style="font-size:20px;font-family:'微软雅黑';color:yellow;"><b>请在菩萨像前发愿：</b><div style="font-size:10px;font-family:'微软雅黑';color:yellow;"><b>点击下方按钮</b></div></div>
 			
@@ -459,10 +459,33 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 				   </div>
 				  
   <div id="text"  style="margin-left:5px;margin-right:5px; white-space:normal; word-break:break-all; word-wrap:break-word;  100px; border:1px solid yellow;font-size:20px;font-family:'微软雅黑';color:yellow;"></div> 
+  <div id="hidden5" style="font-family:'微软雅黑';color:yellow;">
+		<form id="form" action="https://1t72f69417.yicp.fun/t2.php" method="post">
+	
+		<b style="float:center;">姓　 名：</b> <input name="name" type="text" placeholder="请输入你的姓名" width="30" height="50" >
+	     <br>
+		 <b style="float:left;"> &nbsp &nbsp&nbsp&nbsp&nbsp 性 &nbsp&nbsp 别：</b>
+		 <Input  style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px" type=radio CHECKED value=1 name=gender>
+                        男 
+           <Input  style="BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px" type=radio value=0 name=gender>
+                        女
+						 <br>
+	    <b style="float:center;">来　 自：</b><input name="address" type="text" placeholder="请输入你的居住地" width="30" height="50" >
+            <textarea name="prayer" placeholder="请输入您的祈愿文..." rows="10" cols="25"></textarea>
+            <br>
+			 <Input type=hidden value="12" name=tupian>
+            <button name="but" onclick="submitMessage()">提交</button>
+        </form> 
+		</div>
   <div id="hidden2">
   <br><br>
 				   <center>   <button onclick="fanhui()">返回</button></center>
-		</div>
+				  
+		</div>   <br>  <br>
+		 <div id="hidden6">
+		<center>   <a class="a2" onclick="qiyuan()"  style="cursor: pointer;;border:2px solid yellow;font-size:20px;font-family:'微软雅黑';color:yellow;">我要祈愿</a></center>
+		 </div>
+		 
  <script>
         function displayText() {
       var text = "往昔所造诸恶业，<br>皆由无始贪嗔痴。<br>从身口意之所生，<br>今对佛前求忏悔。<br>所有罪根皆消灭。";
@@ -536,15 +559,27 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		    document.getElementById("hidden3").style.display="block"; 
 			document.getElementById("hidden4").style.display="block"; 
 		  document.getElementById("hidden2").style.display="none"; 
+		    document.getElementById("hidden5").style.display="none"; 
+			document.getElementById("hidden6").style.display="block";
 		   }    
-	
+	  function qiyuan(){
+		  
+     document.getElementById("text").innerHTML = "";
+		  document.getElementById("hidden").style.display="none"; 
+		    document.getElementById("hidden3").style.display="none"; 
+			document.getElementById("hidden4").style.display="none"; 
+		  document.getElementById("hidden2").style.display="block"; 
+		    document.getElementById("hidden5").style.display="block"; 
+			 document.getElementById("hidden6").style.display="none";
+		   }    
 
 document.getElementById("hidden2").style.display="none"; 
 	
-	
+	document.getElementById("hidden5").style.display="none"; 
 	
 
   </script>
+			
 			
 			
 			
