@@ -250,13 +250,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                   </TR>
                   <TR> 
                     <TD><IMG height=82 src="img/sjmnf_12.gif" width=34></TD>
-                    <TD colSpan=2><A 
+                   <TD colSpan=2><A  id="gongdeng.png"      class="menu2"
             onclick="check('灯');changeImages('sjmnf_13', 'img/sjmnf_13-click.gif', 'sjmnf_18', 'img/sjmnf_18-sjmnf_13_click.gif');"><IMG src="img/sjmnf_13.gif" alt="供灯" 
             name=sjmnf_13 width=80 
             height=82 border=0></A></TD>
                     <TD><IMG height=82 src="img/sjmnf_14.gif" width=37></TD>
                     <TD><IMG height=82 src="img/sjmnf_15.gif" width=36></TD>
-                    <TD><A 
+                    <TD><A  id="gongdeng.png"  class="menu2"
             onclick="check('灯');changeImages('sjmnf_16', 'img/sjmnf_16-click.gif');"><IMG src="img/sjmnf_16.gif" alt="供灯" 
             name=sjmnf_16 width=83 
             height=82 border=0></A></TD>
@@ -278,19 +278,19 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                     <TD><IMG height=56 src="img/spacer.gif" width=1></TD>
                   </TR>
                   <TR> 
-                    <TD colSpan=3><a 
+                    <TD colSpan=3><a id="gongshui.png"  class="menu"
             onClick="check('净水');changeImages('sjmnf_19', 'img/sjmnf_19-sjmnf_22_click.gif');"><img src="img/sjmnf_22.gif" alt="净水" width=114 
             height=70 border=0></a></TD>
-                    <TD colSpan=2><A 
+                    <TD colSpan=2><A  id="gongxiang.png"  class="menu"
             onclick="check('香');changeImages('sjmnf_19', 'img/sjmnf_19-sjmnf_23_click.gif');"><IMG src="img/sjmnf_23.gif" alt="供香" width=81 
             height=70 border=0></A></TD>
-                    <TD><a 
+                    <TD><a id="sjmnf_24.gif"  class="menu"
             onClick="check('鲜果');changeImages('sjmnf_19', 'img/sjmnf_19-sjmnf_24_click.gif');"><img src="img/sjmnf_24.gif" alt="鲜果" width=110 
             height=70 border=0></a></TD>
-                    <TD colSpan=2><a 
+                    <TD colSpan=2><a  id="sjmnf_25.gif"  class="menu"
             onClick="check('花');changeImages('sjmnf_19', 'img/sjmnf_19-sjmnf_25_click.gif', 'sjmnf_21', 'img/sjmnf_21-sjmnf_25_click.gif');"><img src="img/sjmnf_25.gif" alt="供花" width=82 
             height=70 border=0></a></TD>
-                    <TD colSpan=2><A 
+                    <TD colSpan=2><A  id="sjmnf_26.gif"   class="menu"
             onclick="check('七宝');changeImages('sjmnf_19', 'img/sjmnf_19-sjmnf_26_click.gif');"><IMG src="img/sjmnf_26.gif" alt="供七宝" width=113 
             height=70 border=0></A></TD>
                     <TD><IMG height=70 src="img/spacer.gif" 
@@ -477,6 +477,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
             <textarea name="prayer" placeholder="请输入您的祈愿文..." rows="10" cols="25"></textarea>
             <br>
 			 <Input type=hidden value="7" name=tupian>
+        		 <input type="hidden" id="displayText" name="deng" size="40"><br>
+             <input type="hidden" id="displayText2"  name="xiang"   size="40">
             <button name="but" onclick="submitMessage()">提交</button>
         </form> 
 		</div>
@@ -490,6 +492,27 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 		 </div>
 		 
  <script>
+ window.onload = function() {
+    var buttons = document.getElementsByClassName('menu');
+    var displayText = document.getElementById('displayText');
+var buttons2 = document.getElementsByClassName('menu2');
+var displayText2 = document.getElementById('displayText2');
+    for(var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            displayText.value = this.id;
+        });
+    }
+	 for(var i = 0; i < buttons2.length; i++) {
+        buttons2[i].addEventListener('click', function() {
+            displayText2.value = this.id;
+        });
+    }
+	
+	
+	
+	
+};
+ 
         function displayText() {
       var text = "往昔所造诸恶业，<br>皆由无始贪嗔痴。<br>从身口意之所生，<br>今对佛前求忏悔。<br>所有罪根皆消灭。";
 	  
